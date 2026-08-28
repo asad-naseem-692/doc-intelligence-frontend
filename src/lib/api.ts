@@ -1,6 +1,8 @@
 import { authStorage } from './auth';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = 
+  process.env.NEXT_PUBLIC_API_BASE_URL || 
+  'https://doc-intelligence-backend-production-a174.up.railway.app';
 
 interface RequestOptions extends RequestInit {
   params?: Record<string, string | number | boolean | undefined>;
